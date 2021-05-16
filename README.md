@@ -26,7 +26,7 @@ git clone https://github.com/gcharang/komodo-install-explorer
 cd komodo-install-explorer
 ```
 
-Run the script: https://github.com/gcharang/komodo-install-explorer/blob/master/setup-explorer-directory.sh
+Run the script: https://github.com/gcharang/ciphscoin-install-explorer/blob/master/setup-explorer-directory.sh
 This script installs dependencies and prepares the directory for installing the explorer
 
 ```bash
