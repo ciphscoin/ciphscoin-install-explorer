@@ -63,7 +63,7 @@ nvm use v4
 
 $CUR_DIR/node_modules/bitcore-node-komodo/bin/bitcore-node create $i-explorer
 cd $i-explorer
-$CUR_DIR/node_modules/bitcore-node-komodo/bin/bitcore-node install git+https://git@github.com/DeckerSU/insight-api-komodo git+https://git@github.com/DeckerSU/insight-ui-komodo
+$CUR_DIR/node_modules/bitcore-node-komodo/bin/bitcore-node install git+https://git@github.com/DeckerSU/insight-api-komodo git+https://git@github.com/ciphscoin/insight-ui-komodo
 cd $CUR_DIR
 
 cat << EOF > $CUR_DIR/$i-explorer/bitcore-node.json
@@ -136,7 +136,7 @@ if [ ! -d "$CUR_DIR/explorer-notarized" ]; then
   count=1
   while [ $success -eq 0 ]; do
     echo "[Try $count] Cloning the explorer installer repository"
-    git clone https://github.com/gcharang/explorer-notarized && success=1 || success=0
+    git clone https://github.com/ciphscoin/explorer-notarized && success=1 || success=0
     sleep 4
     count=$((count+1))
   done
