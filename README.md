@@ -22,11 +22,11 @@ Clone this repository in your home directory and navigate into it
 
 ```bash
 cd ~
-git clone https://github.com/gcharang/komodo-install-explorer
+git clone https://github.com/ciphscoin/ciphscoin-install-explorer
 cd komodo-install-explorer
 ```
 
-Run the script: https://github.com/gcharang/ciphscoin-install-explorer/blob/master/setup-explorer-directory.sh
+Run the script: https://github.com/ciphscoin/ciphscoin-install-explorer/blob/master/setup-explorer-directory.sh
 This script installs dependencies and prepares the directory for installing the explorer
 
 ```bash
@@ -35,10 +35,10 @@ This script installs dependencies and prepares the directory for installing the 
 
 It should create a subdirectory named `node_modules`
 
-Now run the script: https://github.com/gcharang/komodo-install-explorer/blob/master/install-assetchain-explorer.sh with the Smart Chain's name as the argument
+Now run the script: https://github.com/ciphscoin/ciphscoin-install-explorer/blob/master/install-assetchain-explorer.sh with the Smart Chain's name as the argument
 
 ```bash
-./install-assetchain-explorer.sh SMARTCHAINNAME
+./install-assetchain-explorer.sh CIPHS
 ```
 
 This will create a new sub directory named `SMARTCHAINNAME-explorer` and a script named `SMARTCHAINNAME-explorer-start.sh`
@@ -61,5 +61,5 @@ The only problem is when the ports of two different Smart Chains conflict with e
 In that case, if you wish to run them at the same time, modify the `install-assetchain-explorer.sh` script to have fixed port values that are all distinct and different from the other Smart Chain's ports. Lets say the Smart Chain's name is `SMARTCHAINNAME1`, then delete the sub directory named `SMARTCHAINNAME1-explorer` and the script named `SMARTCHAINNAME1-explorer-start.sh` and run the modified `install-assetchain-explorer.sh` with its name again:
 
 ```bash
-install-assetchain-explorer.sh SMARTCHAINNAME1
+install-assetchain-explorer.sh CIPHS1
 ```
